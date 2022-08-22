@@ -27,9 +27,9 @@ resource vnet 'Microsoft.Network/virtualNetworks@2021-05-01' = {
         }
       }
       {
-        name: vnetProperties.subnets[0].name
+        name: vnetProperties.subnets[1].name
         properties: {
-          addressPrefix: vnetProperties.subnets[0].addressPrefix
+          addressPrefix: vnetProperties.subnets[1].addressPrefix
           networkSecurityGroup: {
             id: nsgLockdown.id
           }
